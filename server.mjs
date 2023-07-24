@@ -1,6 +1,6 @@
-const express = require('express');
-const dbConnect = require('./db');
-const mongodb = require('mongodb')
+import express from 'express';
+import dbConnect from './db.mjs';
+import mongodb from 'mongodb';
 
 const app = express()
 
@@ -19,13 +19,6 @@ app.get('/', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch todos' });
   }
 });
-
-//get('/', async (req,res)=>{
-//   let data = await dbConnect();
-//   data = await data.find().toArray();
-//   console.log(data)
-//   res.send(data)
-// })
 
 
 app.post('/', async (req, res) => {

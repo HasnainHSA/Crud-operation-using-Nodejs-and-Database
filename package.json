@@ -2,7 +2,7 @@
   "name": "crud-api-with-database",
   "version": "1.0.0",
   "description": "a simple crud operation api with nodejs, express.js and mongodb database",
-  "main": "server.js",
+  "main": "server.mjs",
   "scripts": {
     "run": "node server.mjs",
     "dev": "nodemon server.mjs",
