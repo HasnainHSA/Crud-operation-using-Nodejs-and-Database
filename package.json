@@ -1,0 +1,20 @@
+{
+  "name": "crud-api-with-database",
+  "version": "1.0.0",
+  "description": "a simple crud operation api with nodejs, express.js and mongodb database",
+  "main": "server.mjs",
+  "scripts": {
+    "run": "node server.mjs",
+    "dev": "nodemon server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasnain.HSA",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "nodemon": "^3.0.1"
+  }
+}
