@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>CRUD App</h1>
+
+    <!-- Form to add a new product -->
+    <form id="add-product-form" class="form-con">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required placeholder="Enter your Product Name"/><br />
+
+      <label for="description">Description:</label>
+      <input type="text" id="description" required placeholder="Enter your Product Brand Name"/><br />
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" required placeholder="Enter your Product price"/><br />
+
+      <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Table to display products -->
+    <div class="container">
+    <table id="product-table">
+      <!-- Table headers -->
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Brands</th>
+          <th>Price</th>
+          <th>functions</th>
+        </tr>
+      </thead>
+      <!-- Table body will be dynamically added here -->
+      <tbody></tbody>
+    </table>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
